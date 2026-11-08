@@ -1,0 +1,16 @@
+:root {
+    --bs-primary: #4B0082;
+    --bs-primary-rgb: 75, 0, 130;
+}
+
+.home {
+    min-height: 85vh;
+
+    background-image: url('./imagens/img.home.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+

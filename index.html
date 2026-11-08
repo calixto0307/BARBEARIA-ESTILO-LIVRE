@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Estilo Livre</title>
+    <!-- Links corrigidos com o endereço completo do Bootstrap e Ícones -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="esilos.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho com Logo e Menu de Navegação Responsivo (Navbar) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="imagens/logo.png" alt="Logo Estilo Livre" width="50">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Home com Banner de Destaque e Chamada para Ação (CTA) -->
+    <section section id="home" class="home d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center h-100 gy-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="badge text-bg-primary px-3 py-2 rounded-pill mb-3 text-uppercase fw-bold">Estilo &
+                        Tradição</span>
+                    <h1 class="display-3 fw-bold mb-3 text-body-emphasis">Barbearia <br><span
+                            class="text-primary">Estilo Livre</span></h1>
+                    <p class="lead mb-4 text-body-secondary">
+                        Muito mais que uma barba bem feita ou um corte alinhado. Oferecemos uma experiência de cuidado
+                        exclusiva em um ambiente pensado para o seu bem-estar.
+                    </p>
+                    <div class="d-grid d-sm-inline-flex gap-3">
+                        <a href="#contato" class="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-sm">Agende seu
+                            Horário</a>
+                        <a href="#servicos" class="btn btn-outline-secondary btn-lg px-4 py-3 fw-semibold">Ver
+                            Serviços</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="py-5 bg-body">
+        <div class="container py-4">
+            <div class="row align-items-center gy-4 flex-column-reverse flex-lg-row">
+                <div class="col-lg-6">
+                    <img src="./imagens/img.local" alt="Interior da barbearia" class="img-fluid rounded-4 shadow"
+                        style="max-height: 350px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="h1 fw-bold mb-3 text-body-emphasis">Nossa Proposta</h2>
+                    <p class="text-body-secondary mb-3">
+                        Fundada com o objetivo de resgatar o espírito clássico das antigas barbearias aliado às
+                        tendências e técnicas mais modernas do mercado, a <strong>Estilo Livre</strong> é o ponto de
+                        encontro perfeito para quem valoriza os detalhes.
+                    </p>
+                    <p class="text-body-secondary mb-4">
+                        Nossa equipe de especialistas está pronta para ouvir suas ideias e transformá-las em realidade,
+                        garantindo que você saia confiante e com o visual que realmente te representa.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6"><i class="bi bi-check-circle-fill text-primary me-2"></i> Atendimento Premium
+                        </div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill text-primary me-2"></i> Cerveja Gelada
+                        </div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill text-primary me-2"></i> Toalha Quente</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill text-primary me-2"></i> Localização Fácil
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços usando Cards do Bootstrap -->
+    <section id="servicos" class="py-5 bg-body-secondary">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-body-emphasis">Nossos Serviços</h2>
+                <p class="text-body-secondary">Tudo o que você precisa para manter o visual em dia</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./imagens/img.corte.jpeg" class="card-img-top object-fit-cover" alt="Corte de cabelo"
+                            style="height: 200px;">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold">Corte de Cabelo</h3>
+                            <p class="card-text text-body-secondary small">Do clássico ao degradê moderno. Alinhamento
+                                perfeito feito com tesoura e máquina.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-primary fs-5">R$ 50,00</span>
+                                <span class="text-body-tertiary small"><i class="bi bi-clock me-1"></i> 40 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./imagens/img.barba.jpeg" class="card-img-top object-fit-cover"
+                            alt="Barba profissional" style="height: 200px;">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold">Barba Completa</h3>
+                            <p class="card-text text-body-secondary small">Protocolo tradicional com toalha quente,
+                                óleos essenciais, massagem facial e navalha afiada.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-primary fs-5">R$ 40,00</span>
+                                <span class="text-body-tertiary small"><i class="bi bi-clock me-1"></i> 30 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="./imagens/img.combo.jpeg" class="card-img-top object-fit-cover"
+                            alt="Combo Cabelo e Barba" style="height: 200px;">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold">Combo Estilo Livre</h3>
+                            <p class="card-text text-body-secondary small">Nosso serviço completo. Garanta o corte e a
+                                barba alinhados de uma só vez com desconto.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-primary fs-5">R$ 80,00</span>
+                                <span class="text-body-tertiary small"><i class="bi bi-clock me-1"></i> 1h 10min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section id="depoimentos" class="py-5 bg-body">
+
+        <div class="container py-4">
+
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-body-emphasis">
+                    Quem Frequenta, Aprova
+                </h2>
+
+                <p class="text-body-secondary">
+                    Veja o depoimento de alguns de nossos clientes
+                </p>
+            </div>
+
+            <div id="carouselDepoimentos" class="carousel slide mx-auto" data-bs-ride="carousel"
+                style="max-width: 700px;">
+
+                <div class="carousel-inner text-center bg-body-tertiary p-5 rounded-4 shadow-sm">
+
+                    <!-- Depoimento 1 -->
+                    <div class="carousel-item active" data-bs-interval="4000">
+
+                        <i class="bi bi-quote text-primary display-4 d-block mb-3"></i>
+
+                        <p class="lead">
+                            Excelente atendimento! O corte ficou exatamente como eu queria.
+                            Ambiente muito agradável!
+                        </p>
+
+                        <h5 class="fw-bold">Carlos Mendes</h5>
+
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+
+                        <i class="bi bi-quote text-primary display-4 d-block mb-3"></i>
+
+                        <p class="lead">
+                            Profissionais muito atenciosos e serviço de qualidade.
+                            Recomendo a todos!
+                        </p>
+
+                        <h5 class="fw-bold">Lucas Ferreira</h5>
+
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+
+                        <i class="bi bi-quote text-primary display-4 d-block mb-3"></i>
+
+                        <p class="lead">
+                            Melhor barbearia da região! Sempre saio satisfeito
+                            com o resultado.
+                        </p>
+
+                        <h5 class="fw-bold">Rafael Oliveira</h5>
+
+                    </div>
+
+                </div>
+
+                <!-- Botão anterior -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                    <span class="visually-hidden">Anterior</span>
+
+                </button>
+
+                <!-- Botão próximo -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                    <span class="visually-hidden">Próximo</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5 bg-body-secondary">
+
+        <div class="container py-4">
+
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-body-emphasis">Entre em Contato</h2>
+                <p class="text-body-secondary">
+                    Tem alguma dúvida? Envie uma mensagem para nós!
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-7">
+
+                    <div class="card border-0 shadow p-4">
+
+                        <form>
+
+                            <!-- Campo Nome -->
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-semibold">
+                                    Nome completo
+                                </label>
+
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"
+                                    required>
+                            </div>
+
+                            <!-- Campo E-mail -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">
+                                    E-mail
+                                </label>
+
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"
+                                    required>
+                            </div>
+
+                            <!-- Campo Mensagem -->
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-semibold">
+                                    Mensagem
+                                </label>
+
+                                <textarea class="form-control" id="mensagem" rows="5"
+                                    placeholder="Escreva sua mensagem..." required></textarea>
+                            </div>
+
+                            <!-- Botão Enviar -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-roxo btn-lg fw-semibold">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
